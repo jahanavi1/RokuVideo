@@ -1,0 +1,15 @@
+
+sub setContent()
+
+   m.Image.uri="pkg:/images/Cnter-2018.jpg"
+  ContentNode = CreateObject("roSGNode", "ContentNode")
+  'ContentNode.streamFormat = "mp4"
+  ContentNode.url = "https:xyz...any format of url for video link"
+  ContentNode.StarRating = 80
+  ContentNode.Length = 1972
+  ContentNode.subtitleConfig = {Trackname: "pkg:/source/Cnter-2018.dsrt" }
+
+
+  m.Video.content = ContentNode
+
+end sub
